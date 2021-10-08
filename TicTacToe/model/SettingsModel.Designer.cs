@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace TicTacToeSetting {
+namespace TicTacToeSettings {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
@@ -44,6 +44,54 @@ namespace TicTacToeSetting {
             }
             set {
                 this["Columns"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool MaxSizeField {
+            get {
+                return ((bool)(this["MaxSizeField"]));
+            }
+            set {
+                this["MaxSizeField"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("50")]
+        public int SizeCell {
+            get {
+                return ((int)(this["SizeCell"]));
+            }
+            set {
+                this["SizeCell"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool TimeDescending {
+            get {
+                return ((bool)(this["TimeDescending"]));
+            }
+            set {
+                this["TimeDescending"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("700")]
+        public int CountSeconds {
+            get {
+                return ((int)(this["CountSeconds"]));
+            }
+            set {
+                this["CountSeconds"] = value;
             }
         }
     }

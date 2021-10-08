@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using TicTacToePlayer;
-using TicTacToeSetting;
+using TicTacToeSettings;
 
 namespace TicTacToeSettings
 {
@@ -48,15 +48,15 @@ namespace TicTacToeSettings
             ButtonsColor = System.Drawing.Color.Aqua;
 
             // Параметры поля
-            MaxSizeField = true;
+            MaxSizeField = settingsModel.MaxSizeField;
             Rows = settingsModel.Rows;
             Columns = settingsModel.Columns;
-            SizeCell = 40;
+            SizeCell = settingsModel.SizeCell;
 
 
             // Параметры времени
-            TimeDescending = true;
-            CountSeconds = 500;
+            TimeDescending = settingsModel.TimeDescending;
+            CountSeconds = settingsModel.CountSeconds;
 
 
             // Параметры игроков
@@ -72,8 +72,8 @@ namespace TicTacToeSettings
         }
         public void ColorBackgroundNewValueHandler()
         {
-            settingsModel.Rows = 11;
-            settingsModel.Save();
+            //settingsModel.Rows = 15;
+            //settingsModel.Save();
             MessageBox.Show("Hello Rows.");
         }
         public void ColorFieldNewValueHandler()

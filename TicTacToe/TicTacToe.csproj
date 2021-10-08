@@ -67,6 +67,7 @@
     <Compile Include="elements\MyCheckBox.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="model\SettingsModel.cs" />
     <Compile Include="model\SettingsModel.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>

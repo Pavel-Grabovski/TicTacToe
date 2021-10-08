@@ -9,7 +9,6 @@ using TicTacToeSettings;
 using TicTacToeCell;
 using TicTacToePlayer;
 using System.Diagnostics;
-using TicTacToeSetting;
 using TicTacToe;
 
 namespace TicTacToeGame
@@ -377,7 +376,7 @@ namespace TicTacToeGame
         {
             // ЕСТЬ ОКНО НАСТРОЕК, ПОТОМ У НЕМУ СДЕЛАЮ model и presenter
 
-            SettingWindow settingWindow = new SettingWindow(_settings, _view);
+            SettingWindow settingWindow = new SettingWindow();
             settingWindow.ShowDialog();
         }
     }

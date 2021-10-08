@@ -1,5 +1,5 @@
 ﻿
-namespace TicTacToeSetting
+namespace TicTacToeSettings
 {
     partial class SettingWindow
     {
@@ -29,26 +29,14 @@ namespace TicTacToeSetting
         /// </summary>
         private void InitializeComponent()
         {
-            MyCheckBox myCheckBoxFullFieldNewValue;
-            MyCheckBox myCheckBoxFullFieldValue;
-            MyCheckBox myCheckBoxTimeDescendingnNewVavue;
-            MyCheckBox myCheckBoxTimeDescendingVavue;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SettingWindow));
             this.tabControl = new System.Windows.Forms.TabControl();
-            this._generalSettingsTab = new System.Windows.Forms.TabPage();
-            this.butColorButtonNewValue = new System.Windows.Forms.Button();
-            this.butColorCellNewValue = new System.Windows.Forms.Button();
-            this.butColorBackgroundNewValue = new System.Windows.Forms.Button();
-            this.lblColorButtonValue = new System.Windows.Forms.Label();
-            this.lblColorCellValue = new System.Windows.Forms.Label();
-            this.lblColorBackgroundValue = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
             this._settingsGameTab = new System.Windows.Forms.TabPage();
             this._paramGameSplitContainer = new System.Windows.Forms.SplitContainer();
+            this.сheckBoxFullFieldNewValue = new System.Windows.Forms.CheckBox();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
+            this.сheckBoxFullFieldValue = new System.Windows.Forms.CheckBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.lblSizeCellValue = new System.Windows.Forms.Label();
             this.lblWidthFieldValue = new System.Windows.Forms.Label();
@@ -58,6 +46,9 @@ namespace TicTacToeSetting
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.checkBoxTimeDescendingNewVavue = new System.Windows.Forms.CheckBox();
+            this.butSaveGameSettings = new System.Windows.Forms.Button();
+            this.checkBoxTimeDescendingVavue = new System.Windows.Forms.CheckBox();
             this.label2 = new System.Windows.Forms.Label();
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
@@ -85,12 +76,17 @@ namespace TicTacToeSetting
             this.lblColorPlayerTitle_2 = new System.Windows.Forms.Label();
             this.lblSymbolPlayerSecondValue = new System.Windows.Forms.Label();
             this.lblSymbolPlayerTitle_2 = new System.Windows.Forms.Label();
-            myCheckBoxFullFieldNewValue = new MyCheckBox();
-            myCheckBoxFullFieldValue = new MyCheckBox();
-            myCheckBoxTimeDescendingnNewVavue = new MyCheckBox();
-            myCheckBoxTimeDescendingVavue = new MyCheckBox();
+            this._customizationlSettingsTab = new System.Windows.Forms.TabPage();
+            this.butColorButtonNewValue = new System.Windows.Forms.Button();
+            this.butColorCellNewValue = new System.Windows.Forms.Button();
+            this.butColorBackgroundNewValue = new System.Windows.Forms.Button();
+            this.lblColorButtonValue = new System.Windows.Forms.Label();
+            this.lblColorCellValue = new System.Windows.Forms.Label();
+            this.lblColorBackgroundValue = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
             this.tabControl.SuspendLayout();
-            this._generalSettingsTab.SuspendLayout();
             this._settingsGameTab.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this._paramGameSplitContainer)).BeginInit();
             this._paramGameSplitContainer.Panel1.SuspendLayout();
@@ -101,53 +97,8 @@ namespace TicTacToeSetting
             this.ParamPlayerSplitContainer.Panel1.SuspendLayout();
             this.ParamPlayerSplitContainer.Panel2.SuspendLayout();
             this.ParamPlayerSplitContainer.SuspendLayout();
+            this._customizationlSettingsTab.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // myCheckBoxFullFieldNewValue
-            // 
-            myCheckBoxFullFieldNewValue.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            myCheckBoxFullFieldNewValue.Cursor = System.Windows.Forms.Cursors.Hand;
-            myCheckBoxFullFieldNewValue.Location = new System.Drawing.Point(330, 70);
-            myCheckBoxFullFieldNewValue.Name = "myCheckBoxFullFieldNewValue";
-            myCheckBoxFullFieldNewValue.Size = new System.Drawing.Size(29, 30);
-            myCheckBoxFullFieldNewValue.TabIndex = 5;
-            myCheckBoxFullFieldNewValue.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            myCheckBoxFullFieldNewValue.UseVisualStyleBackColor = true;
-            // 
-            // myCheckBoxFullFieldValue
-            // 
-            myCheckBoxFullFieldValue.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            myCheckBoxFullFieldValue.Cursor = System.Windows.Forms.Cursors.Hand;
-            myCheckBoxFullFieldValue.Enabled = false;
-            myCheckBoxFullFieldValue.Location = new System.Drawing.Point(267, 70);
-            myCheckBoxFullFieldValue.Name = "myCheckBoxFullFieldValue";
-            myCheckBoxFullFieldValue.Size = new System.Drawing.Size(29, 30);
-            myCheckBoxFullFieldValue.TabIndex = 5;
-            myCheckBoxFullFieldValue.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            myCheckBoxFullFieldValue.UseVisualStyleBackColor = true;
-            // 
-            // myCheckBoxTimeDescendingnNewVavue
-            // 
-            myCheckBoxTimeDescendingnNewVavue.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            myCheckBoxTimeDescendingnNewVavue.Cursor = System.Windows.Forms.Cursors.Hand;
-            myCheckBoxTimeDescendingnNewVavue.Location = new System.Drawing.Point(328, 68);
-            myCheckBoxTimeDescendingnNewVavue.Name = "myCheckBoxTimeDescendingnNewVavue";
-            myCheckBoxTimeDescendingnNewVavue.Size = new System.Drawing.Size(30, 30);
-            myCheckBoxTimeDescendingnNewVavue.TabIndex = 5;
-            myCheckBoxTimeDescendingnNewVavue.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            myCheckBoxTimeDescendingnNewVavue.UseVisualStyleBackColor = true;
-            // 
-            // myCheckBoxTimeDescendingVavue
-            // 
-            myCheckBoxTimeDescendingVavue.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            myCheckBoxTimeDescendingVavue.Cursor = System.Windows.Forms.Cursors.Hand;
-            myCheckBoxTimeDescendingVavue.Enabled = false;
-            myCheckBoxTimeDescendingVavue.Location = new System.Drawing.Point(207, 68);
-            myCheckBoxTimeDescendingVavue.Name = "myCheckBoxTimeDescendingVavue";
-            myCheckBoxTimeDescendingVavue.Size = new System.Drawing.Size(30, 30);
-            myCheckBoxTimeDescendingVavue.TabIndex = 5;
-            myCheckBoxTimeDescendingVavue.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            myCheckBoxTimeDescendingVavue.UseVisualStyleBackColor = true;
             // 
             // tabControl
             // 
@@ -155,9 +106,9 @@ namespace TicTacToeSetting
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tabControl.CausesValidation = false;
-            this.tabControl.Controls.Add(this._generalSettingsTab);
             this.tabControl.Controls.Add(this._settingsGameTab);
             this.tabControl.Controls.Add(this._paramPlayerTab);
+            this.tabControl.Controls.Add(this._customizationlSettingsTab);
             this.tabControl.Cursor = System.Windows.Forms.Cursors.Hand;
             this.tabControl.HotTrack = true;
             this.tabControl.ItemSize = new System.Drawing.Size(120, 30);
@@ -168,135 +119,6 @@ namespace TicTacToeSetting
             this.tabControl.Size = new System.Drawing.Size(743, 304);
             this.tabControl.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.tabControl.TabIndex = 0;
-            // 
-            // _generalSettingsTab
-            // 
-            this._generalSettingsTab.BackColor = System.Drawing.Color.White;
-            this._generalSettingsTab.Controls.Add(this.butColorButtonNewValue);
-            this._generalSettingsTab.Controls.Add(this.butColorCellNewValue);
-            this._generalSettingsTab.Controls.Add(this.butColorBackgroundNewValue);
-            this._generalSettingsTab.Controls.Add(this.lblColorButtonValue);
-            this._generalSettingsTab.Controls.Add(this.lblColorCellValue);
-            this._generalSettingsTab.Controls.Add(this.lblColorBackgroundValue);
-            this._generalSettingsTab.Controls.Add(this.label15);
-            this._generalSettingsTab.Controls.Add(this.label14);
-            this._generalSettingsTab.Controls.Add(this.label13);
-            this._generalSettingsTab.Cursor = System.Windows.Forms.Cursors.No;
-            this._generalSettingsTab.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this._generalSettingsTab.Location = new System.Drawing.Point(4, 34);
-            this._generalSettingsTab.Name = "_generalSettingsTab";
-            this._generalSettingsTab.Padding = new System.Windows.Forms.Padding(3);
-            this._generalSettingsTab.Size = new System.Drawing.Size(735, 266);
-            this._generalSettingsTab.TabIndex = 1;
-            this._generalSettingsTab.Text = "Общие настройки";
-            // 
-            // butColorButtonNewValue
-            // 
-            this.butColorButtonNewValue.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.butColorButtonNewValue.Location = new System.Drawing.Point(475, 190);
-            this.butColorButtonNewValue.Name = "butColorButtonNewValue";
-            this.butColorButtonNewValue.Size = new System.Drawing.Size(254, 50);
-            this.butColorButtonNewValue.TabIndex = 6;
-            this.butColorButtonNewValue.Text = "Изменить";
-            this.butColorButtonNewValue.UseVisualStyleBackColor = true;
-            this.butColorButtonNewValue.Click += new System.EventHandler(this._butColorButtonsNewValue_Click);
-            // 
-            // butColorCellNewValue
-            // 
-            this.butColorCellNewValue.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.butColorCellNewValue.Location = new System.Drawing.Point(475, 110);
-            this.butColorCellNewValue.Name = "butColorCellNewValue";
-            this.butColorCellNewValue.Size = new System.Drawing.Size(254, 50);
-            this.butColorCellNewValue.TabIndex = 6;
-            this.butColorCellNewValue.Text = "Изменить";
-            this.butColorCellNewValue.UseVisualStyleBackColor = true;
-            this.butColorCellNewValue.Click += new System.EventHandler(this._butColorCellNewValue_Click);
-            // 
-            // butColorBackgroundNewValue
-            // 
-            this.butColorBackgroundNewValue.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.butColorBackgroundNewValue.Location = new System.Drawing.Point(475, 30);
-            this.butColorBackgroundNewValue.Name = "butColorBackgroundNewValue";
-            this.butColorBackgroundNewValue.Size = new System.Drawing.Size(254, 50);
-            this.butColorBackgroundNewValue.TabIndex = 6;
-            this.butColorBackgroundNewValue.Text = "Изменить";
-            this.butColorBackgroundNewValue.UseVisualStyleBackColor = true;
-            this.butColorBackgroundNewValue.Click += new System.EventHandler(this._butColorBackgroundNewValue_Click);
-            // 
-            // lblColorButtonValue
-            // 
-            this.lblColorButtonValue.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblColorButtonValue.Cursor = System.Windows.Forms.Cursors.No;
-            this.lblColorButtonValue.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lblColorButtonValue.Location = new System.Drawing.Point(219, 190);
-            this.lblColorButtonValue.Name = "lblColorButtonValue";
-            this.lblColorButtonValue.Size = new System.Drawing.Size(250, 50);
-            this.lblColorButtonValue.TabIndex = 5;
-            this.lblColorButtonValue.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblColorCellValue
-            // 
-            this.lblColorCellValue.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblColorCellValue.Cursor = System.Windows.Forms.Cursors.No;
-            this.lblColorCellValue.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lblColorCellValue.Location = new System.Drawing.Point(219, 110);
-            this.lblColorCellValue.Name = "lblColorCellValue";
-            this.lblColorCellValue.Size = new System.Drawing.Size(250, 50);
-            this.lblColorCellValue.TabIndex = 5;
-            this.lblColorCellValue.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblColorBackgroundValue
-            // 
-            this.lblColorBackgroundValue.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblColorBackgroundValue.Cursor = System.Windows.Forms.Cursors.No;
-            this.lblColorBackgroundValue.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lblColorBackgroundValue.Location = new System.Drawing.Point(219, 30);
-            this.lblColorBackgroundValue.Name = "lblColorBackgroundValue";
-            this.lblColorBackgroundValue.Size = new System.Drawing.Size(250, 50);
-            this.lblColorBackgroundValue.TabIndex = 5;
-            this.lblColorBackgroundValue.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label15
-            // 
-            this.label15.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label15.Cursor = System.Windows.Forms.Cursors.No;
-            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label15.Location = new System.Drawing.Point(8, 190);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(205, 50);
-            this.label15.TabIndex = 2;
-            this.label15.Text = "Цвет кнопок:";
-            this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label14
-            // 
-            this.label14.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label14.Cursor = System.Windows.Forms.Cursors.No;
-            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label14.Location = new System.Drawing.Point(8, 110);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(205, 50);
-            this.label14.TabIndex = 2;
-            this.label14.Text = "Цвет поля:";
-            this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label13
-            // 
-            this.label13.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label13.Cursor = System.Windows.Forms.Cursors.No;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label13.Location = new System.Drawing.Point(8, 30);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(205, 50);
-            this.label13.TabIndex = 2;
-            this.label13.Text = "Цвет заднего фона:";
-            this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // _settingsGameTab
             // 
@@ -319,11 +141,11 @@ namespace TicTacToeSetting
             // 
             // _paramGameSplitContainer.Panel1
             // 
+            this._paramGameSplitContainer.Panel1.Controls.Add(this.сheckBoxFullFieldNewValue);
             this._paramGameSplitContainer.Panel1.Controls.Add(this.textBox7);
             this._paramGameSplitContainer.Panel1.Controls.Add(this.textBox6);
+            this._paramGameSplitContainer.Panel1.Controls.Add(this.сheckBoxFullFieldValue);
             this._paramGameSplitContainer.Panel1.Controls.Add(this.textBox5);
-            this._paramGameSplitContainer.Panel1.Controls.Add(myCheckBoxFullFieldNewValue);
-            this._paramGameSplitContainer.Panel1.Controls.Add(myCheckBoxFullFieldValue);
             this._paramGameSplitContainer.Panel1.Controls.Add(this.lblSizeCellValue);
             this._paramGameSplitContainer.Panel1.Controls.Add(this.lblWidthFieldValue);
             this._paramGameSplitContainer.Panel1.Controls.Add(this.lblHeightFieldValue);
@@ -335,16 +157,28 @@ namespace TicTacToeSetting
             // 
             // _paramGameSplitContainer.Panel2
             // 
+            this._paramGameSplitContainer.Panel2.Controls.Add(this.checkBoxTimeDescendingNewVavue);
+            this._paramGameSplitContainer.Panel2.Controls.Add(this.butSaveGameSettings);
+            this._paramGameSplitContainer.Panel2.Controls.Add(this.checkBoxTimeDescendingVavue);
             this._paramGameSplitContainer.Panel2.Controls.Add(this.label2);
             this._paramGameSplitContainer.Panel2.Controls.Add(this.textBox8);
-            this._paramGameSplitContainer.Panel2.Controls.Add(myCheckBoxTimeDescendingnNewVavue);
-            this._paramGameSplitContainer.Panel2.Controls.Add(myCheckBoxTimeDescendingVavue);
             this._paramGameSplitContainer.Panel2.Controls.Add(this.label11);
             this._paramGameSplitContainer.Panel2.Controls.Add(this.label10);
             this._paramGameSplitContainer.Panel2.Controls.Add(this.lblCountSecondsValue);
             this._paramGameSplitContainer.Size = new System.Drawing.Size(729, 260);
             this._paramGameSplitContainer.SplitterDistance = 362;
             this._paramGameSplitContainer.TabIndex = 0;
+            // 
+            // сheckBoxFullFieldNewValue
+            // 
+            this.сheckBoxFullFieldNewValue.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.сheckBoxFullFieldNewValue.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.сheckBoxFullFieldNewValue.Location = new System.Drawing.Point(259, 58);
+            this.сheckBoxFullFieldNewValue.Name = "сheckBoxFullFieldNewValue";
+            this.сheckBoxFullFieldNewValue.Size = new System.Drawing.Size(100, 50);
+            this.сheckBoxFullFieldNewValue.TabIndex = 7;
+            this.сheckBoxFullFieldNewValue.Text = "Новое значение";
+            this.сheckBoxFullFieldNewValue.UseVisualStyleBackColor = true;
             // 
             // textBox7
             // 
@@ -363,6 +197,18 @@ namespace TicTacToeSetting
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(100, 30);
             this.textBox6.TabIndex = 6;
+            // 
+            // сheckBoxFullFieldValue
+            // 
+            this.сheckBoxFullFieldValue.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.сheckBoxFullFieldValue.Enabled = false;
+            this.сheckBoxFullFieldValue.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.сheckBoxFullFieldValue.Location = new System.Drawing.Point(160, 56);
+            this.сheckBoxFullFieldValue.Name = "сheckBoxFullFieldValue";
+            this.сheckBoxFullFieldValue.Size = new System.Drawing.Size(93, 56);
+            this.сheckBoxFullFieldValue.TabIndex = 7;
+            this.сheckBoxFullFieldValue.Text = "Значение";
+            this.сheckBoxFullFieldValue.UseVisualStyleBackColor = true;
             // 
             // textBox5
             // 
@@ -450,9 +296,9 @@ namespace TicTacToeSetting
             this.label3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label3.Cursor = System.Windows.Forms.Cursors.No;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label3.Location = new System.Drawing.Point(5, 70);
+            this.label3.Location = new System.Drawing.Point(5, 58);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(256, 30);
+            this.label3.Size = new System.Drawing.Size(150, 50);
             this.label3.TabIndex = 2;
             this.label3.Text = "Максимальный размер поля:";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -471,6 +317,38 @@ namespace TicTacToeSetting
             this.label1.TabIndex = 1;
             this.label1.Text = "Параметры поля";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // checkBoxTimeDescendingNewVavue
+            // 
+            this.checkBoxTimeDescendingNewVavue.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.checkBoxTimeDescendingNewVavue.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.checkBoxTimeDescendingNewVavue.Location = new System.Drawing.Point(258, 59);
+            this.checkBoxTimeDescendingNewVavue.Name = "checkBoxTimeDescendingNewVavue";
+            this.checkBoxTimeDescendingNewVavue.Size = new System.Drawing.Size(100, 50);
+            this.checkBoxTimeDescendingNewVavue.TabIndex = 7;
+            this.checkBoxTimeDescendingNewVavue.Text = "Новое значение";
+            this.checkBoxTimeDescendingNewVavue.UseVisualStyleBackColor = true;
+            // 
+            // butSaveGameSettings
+            // 
+            this.butSaveGameSettings.Location = new System.Drawing.Point(258, 220);
+            this.butSaveGameSettings.Name = "butSaveGameSettings";
+            this.butSaveGameSettings.Size = new System.Drawing.Size(102, 37);
+            this.butSaveGameSettings.TabIndex = 7;
+            this.butSaveGameSettings.Text = "Сохранить";
+            this.butSaveGameSettings.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxTimeDescendingVavue
+            // 
+            this.checkBoxTimeDescendingVavue.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.checkBoxTimeDescendingVavue.Enabled = false;
+            this.checkBoxTimeDescendingVavue.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.checkBoxTimeDescendingVavue.Location = new System.Drawing.Point(138, 58);
+            this.checkBoxTimeDescendingVavue.Name = "checkBoxTimeDescendingVavue";
+            this.checkBoxTimeDescendingVavue.Size = new System.Drawing.Size(114, 56);
+            this.checkBoxTimeDescendingVavue.TabIndex = 7;
+            this.checkBoxTimeDescendingVavue.Text = "Значение";
+            this.checkBoxTimeDescendingVavue.UseVisualStyleBackColor = true;
             // 
             // label2
             // 
@@ -513,9 +391,9 @@ namespace TicTacToeSetting
             this.label10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label10.Cursor = System.Windows.Forms.Cursors.No;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label10.Location = new System.Drawing.Point(5, 68);
+            this.label10.Location = new System.Drawing.Point(5, 58);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(180, 30);
+            this.label10.Size = new System.Drawing.Size(127, 50);
             this.label10.TabIndex = 2;
             this.label10.Text = "Время на убывание:";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -813,6 +691,135 @@ namespace TicTacToeSetting
             this.lblSymbolPlayerTitle_2.Text = "Символ:";
             this.lblSymbolPlayerTitle_2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
+            // _customizationlSettingsTab
+            // 
+            this._customizationlSettingsTab.BackColor = System.Drawing.Color.White;
+            this._customizationlSettingsTab.Controls.Add(this.butColorButtonNewValue);
+            this._customizationlSettingsTab.Controls.Add(this.butColorCellNewValue);
+            this._customizationlSettingsTab.Controls.Add(this.butColorBackgroundNewValue);
+            this._customizationlSettingsTab.Controls.Add(this.lblColorButtonValue);
+            this._customizationlSettingsTab.Controls.Add(this.lblColorCellValue);
+            this._customizationlSettingsTab.Controls.Add(this.lblColorBackgroundValue);
+            this._customizationlSettingsTab.Controls.Add(this.label15);
+            this._customizationlSettingsTab.Controls.Add(this.label14);
+            this._customizationlSettingsTab.Controls.Add(this.label13);
+            this._customizationlSettingsTab.Cursor = System.Windows.Forms.Cursors.No;
+            this._customizationlSettingsTab.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this._customizationlSettingsTab.Location = new System.Drawing.Point(4, 34);
+            this._customizationlSettingsTab.Name = "_customizationlSettingsTab";
+            this._customizationlSettingsTab.Padding = new System.Windows.Forms.Padding(3);
+            this._customizationlSettingsTab.Size = new System.Drawing.Size(735, 266);
+            this._customizationlSettingsTab.TabIndex = 1;
+            this._customizationlSettingsTab.Text = "Кастомизация";
+            // 
+            // butColorButtonNewValue
+            // 
+            this.butColorButtonNewValue.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.butColorButtonNewValue.Location = new System.Drawing.Point(475, 190);
+            this.butColorButtonNewValue.Name = "butColorButtonNewValue";
+            this.butColorButtonNewValue.Size = new System.Drawing.Size(254, 50);
+            this.butColorButtonNewValue.TabIndex = 6;
+            this.butColorButtonNewValue.Text = "Изменить";
+            this.butColorButtonNewValue.UseVisualStyleBackColor = true;
+            this.butColorButtonNewValue.Click += new System.EventHandler(this._butColorButtonsNewValue_Click);
+            // 
+            // butColorCellNewValue
+            // 
+            this.butColorCellNewValue.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.butColorCellNewValue.Location = new System.Drawing.Point(475, 110);
+            this.butColorCellNewValue.Name = "butColorCellNewValue";
+            this.butColorCellNewValue.Size = new System.Drawing.Size(254, 50);
+            this.butColorCellNewValue.TabIndex = 6;
+            this.butColorCellNewValue.Text = "Изменить";
+            this.butColorCellNewValue.UseVisualStyleBackColor = true;
+            this.butColorCellNewValue.Click += new System.EventHandler(this._butColorCellNewValue_Click);
+            // 
+            // butColorBackgroundNewValue
+            // 
+            this.butColorBackgroundNewValue.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.butColorBackgroundNewValue.Location = new System.Drawing.Point(475, 30);
+            this.butColorBackgroundNewValue.Name = "butColorBackgroundNewValue";
+            this.butColorBackgroundNewValue.Size = new System.Drawing.Size(254, 50);
+            this.butColorBackgroundNewValue.TabIndex = 6;
+            this.butColorBackgroundNewValue.Text = "Изменить";
+            this.butColorBackgroundNewValue.UseVisualStyleBackColor = true;
+            this.butColorBackgroundNewValue.Click += new System.EventHandler(this._butColorBackgroundNewValue_Click);
+            // 
+            // lblColorButtonValue
+            // 
+            this.lblColorButtonValue.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblColorButtonValue.Cursor = System.Windows.Forms.Cursors.No;
+            this.lblColorButtonValue.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblColorButtonValue.Location = new System.Drawing.Point(219, 190);
+            this.lblColorButtonValue.Name = "lblColorButtonValue";
+            this.lblColorButtonValue.Size = new System.Drawing.Size(250, 50);
+            this.lblColorButtonValue.TabIndex = 5;
+            this.lblColorButtonValue.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblColorCellValue
+            // 
+            this.lblColorCellValue.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblColorCellValue.Cursor = System.Windows.Forms.Cursors.No;
+            this.lblColorCellValue.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblColorCellValue.Location = new System.Drawing.Point(219, 110);
+            this.lblColorCellValue.Name = "lblColorCellValue";
+            this.lblColorCellValue.Size = new System.Drawing.Size(250, 50);
+            this.lblColorCellValue.TabIndex = 5;
+            this.lblColorCellValue.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblColorBackgroundValue
+            // 
+            this.lblColorBackgroundValue.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblColorBackgroundValue.Cursor = System.Windows.Forms.Cursors.No;
+            this.lblColorBackgroundValue.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblColorBackgroundValue.Location = new System.Drawing.Point(219, 30);
+            this.lblColorBackgroundValue.Name = "lblColorBackgroundValue";
+            this.lblColorBackgroundValue.Size = new System.Drawing.Size(250, 50);
+            this.lblColorBackgroundValue.TabIndex = 5;
+            this.lblColorBackgroundValue.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label15
+            // 
+            this.label15.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label15.Cursor = System.Windows.Forms.Cursors.No;
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label15.Location = new System.Drawing.Point(8, 190);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(205, 50);
+            this.label15.TabIndex = 2;
+            this.label15.Text = "Цвет кнопок:";
+            this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label14
+            // 
+            this.label14.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label14.Cursor = System.Windows.Forms.Cursors.No;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label14.Location = new System.Drawing.Point(8, 110);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(205, 50);
+            this.label14.TabIndex = 2;
+            this.label14.Text = "Цвет поля:";
+            this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label13
+            // 
+            this.label13.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label13.Cursor = System.Windows.Forms.Cursors.No;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label13.Location = new System.Drawing.Point(8, 30);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(205, 50);
+            this.label13.TabIndex = 2;
+            this.label13.Text = "Цвет заднего фона:";
+            this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
             // SettingWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -825,7 +832,6 @@ namespace TicTacToeSetting
             this.Name = "SettingWindow";
             this.Text = "Настройки";
             this.tabControl.ResumeLayout(false);
-            this._generalSettingsTab.ResumeLayout(false);
             this._settingsGameTab.ResumeLayout(false);
             this._paramGameSplitContainer.Panel1.ResumeLayout(false);
             this._paramGameSplitContainer.Panel1.PerformLayout();
@@ -840,6 +846,7 @@ namespace TicTacToeSetting
             this.ParamPlayerSplitContainer.Panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ParamPlayerSplitContainer)).EndInit();
             this.ParamPlayerSplitContainer.ResumeLayout(false);
+            this._customizationlSettingsTab.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -847,8 +854,7 @@ namespace TicTacToeSetting
         #endregion
         private System.Windows.Forms.TabControl tabControl;
         public System.Windows.Forms.TabPage _paramPlayerTab;
-        private System.Windows.Forms.TabPage _generalSettingsTab;
-        private System.Windows.Forms.TabPage _settingsGameTab;
+        private System.Windows.Forms.TabPage _customizationlSettingsTab;
         private System.Windows.Forms.SplitContainer ParamPlayerSplitContainer;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
@@ -866,29 +872,12 @@ namespace TicTacToeSetting
         private System.Windows.Forms.Label lblColorPlayerTitle_2;
         private System.Windows.Forms.Label lblSymbolPlayerSecondValue;
         private System.Windows.Forms.Label lblSymbolPlayerTitle_2;
-        private System.Windows.Forms.SplitContainer _paramGameSplitContainer;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label lblSizeCellValue;
-        private System.Windows.Forms.Label lblWidthFieldValue;
-        private System.Windows.Forms.Label lblHeightFieldValue;
         private System.Windows.Forms.Button butColorCellNewValue;
         private System.Windows.Forms.Button butColorBackgroundNewValue;
         private System.Windows.Forms.Label lblColorCellValue;
         private System.Windows.Forms.Label lblColorBackgroundValue;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label lblCountSecondsValue;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox8;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox4;
@@ -896,5 +885,28 @@ namespace TicTacToeSetting
         private System.Windows.Forms.Button butColorButtonNewValue;
         private System.Windows.Forms.Label lblColorButtonValue;
         private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.TabPage _settingsGameTab;
+        private System.Windows.Forms.SplitContainer _paramGameSplitContainer;
+        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.Label lblSizeCellValue;
+        private System.Windows.Forms.Label lblWidthFieldValue;
+        private System.Windows.Forms.Label lblHeightFieldValue;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button butSaveGameSettings;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label lblCountSecondsValue;
+        private System.Windows.Forms.CheckBox сheckBoxFullFieldNewValue;
+        private System.Windows.Forms.CheckBox сheckBoxFullFieldValue;
+        private System.Windows.Forms.CheckBox checkBoxTimeDescendingNewVavue;
+        private System.Windows.Forms.CheckBox checkBoxTimeDescendingVavue;
     }
 }

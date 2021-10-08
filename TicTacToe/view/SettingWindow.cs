@@ -10,27 +10,23 @@ using System.Windows.Forms;
 using TicTacToeSettings;
 using TicTacToeView;
 
-namespace TicTacToeSetting
+namespace TicTacToeSettings
 {
     public partial class SettingWindow : Form
     {
-        Settings _settings;
-        GameWindow _gameWindow;
 
         public event EventHandler NewColorBackground;
         public event EventHandler NewColorField;
         public event EventHandler NewColorButtons;
 
 
-        public SettingWindow(Settings settings, GameWindow gameWindow)
+        public SettingWindow()
         {
-            _settings = settings;
-            _gameWindow = gameWindow;
             InitializeComponent();
-            _readActiveSettings();
+            //_readActiveSettings();
         }
 
-        private void _readActiveSettings()
+        /*private void _readActiveSettings()
         {
             // Общие настройки
             this.lblColorBackgroundValue.BackColor = _settings.BackColor;
@@ -38,13 +34,13 @@ namespace TicTacToeSetting
             this.lblColorButtonValue.BackColor = _settings.ButtonsColor;
 
             // Параметры поля
-            //this.myCheckBoxFullFieldValue.Checked = _settings.MaxSizeField;
+            this.сheckBoxFullFieldValue.Checked = _settings.MaxSizeField;
             this.lblHeightFieldValue.Text = Convert.ToString(_settings.Rows);
             this.lblWidthFieldValue.Text = Convert.ToString(_settings.Columns);
             this.lblSizeCellValue.Text = Convert.ToString(_settings.SizeCell);
 
             // Параметры времени
-            //this.myCheckBoxTimeDescendingVavue.Checked = _settings.TimeDescending;
+            this.checkBoxTimeDescendingVavue.Checked = _settings.TimeDescending;
             this.lblCountSecondsValue.Text = Convert.ToString(_settings.CountSeconds);
 
             // Параметры игроков
@@ -55,21 +51,30 @@ namespace TicTacToeSetting
             //Игрок 2
             this.lblNamePlayerSecondValue.Text = _settings.PlayerSecondName;
             this.lblColorPlayerSecondValue.BackColor = _settings.PlayerSecondColor;
-        }
+        }*/
 
         private void _butColorBackgroundNewValue_Click(object sender, EventArgs e)
         {
-            _settings.ColorBackgroundNewValueHandler();
+            //_settings.ColorBackgroundNewValueHandler();
         }
 
         private void _butColorCellNewValue_Click(object sender, EventArgs e)
         {
-            _settings.ColorFieldNewValueHandler();
+           // _settings.ColorFieldNewValueHandler();
         }
 
         private void _butColorButtonsNewValue_Click(object sender, EventArgs e)
         {
-            _settings.ColorButtonsNewValueHandler();
+            //_settings.ColorButtonsNewValueHandler();
+        }
+
+        private void butSaveGameSettings_Click(object sender, EventArgs e)
+        {
+            //_settings.MaxSizeField = this.сheckBoxFullFieldNewValue.Checked;
+            //_settings.TimeDescending = this.checkBoxTimeDescendingNewVavue.Checked;
+            
+            //settingsModel.Save();
+            MessageBox.Show("Hello Rows.");
         }
     }
 }

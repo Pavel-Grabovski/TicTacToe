@@ -19,6 +19,7 @@ namespace TicTacToeView
             Application.SetCompatibleTextRenderingDefault(false);
 
             Settings settings = new Settings();
+
             GameWindow view = new GameWindow(settings);
             Field field = new Field(settings);
             Game game = new Game(settings, view, field, 0, 0);
